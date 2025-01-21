@@ -357,7 +357,7 @@ struct TrimmedLine {
     var isProbablyCodeFence: Bool {
         var line = self
         line.lexWhitespace()
-        return line.text.starts(with: "```") || line.text.starts(with: "~~~")
+        return line.text.starts(with: "```")
     }
 
     /// Take a prefix from the start of the line.
